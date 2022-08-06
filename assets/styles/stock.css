@@ -1,0 +1,139 @@
+/* insert font font.otf into style */
+@font-face {
+    font-family: 'font';
+    src: url('https://prezzo.tech/assets/fonts/font.otf');
+}
+* {
+    font-family: 'font';
+}
+body {
+    background-color: #9dd2c2;
+}
+/* add font-face to reloadBtn */
+#reloadBtn {
+    /* make reloadBtn fixed to the top */
+    position: fixed;
+    top: 2.5%;
+    right: 2.5%;
+
+    font-family: 'font';
+    background-color: #00756c;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+#reloadBtn:hover {
+    background-color: #00a8a8;
+}
+#resetBtn {
+    position: fixed;
+    top: 2.5%;
+    left: 2.5%;
+
+    font-family: 'font';
+    background-color: red;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+#resetBtn:hover {
+    background-color: #f20000;
+}
+.extraSpace {
+    width: 250px;
+    height: 150px;
+}
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(2.5% + 50px + 2.5%);
+    background-color: #fff;
+    z-index: 0;
+}
+#prezzoBtn {
+    position: fixed;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'font';
+    background-color: white;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    color: #000;
+    font-size: 36px;
+    transition: all 0.3s ease;
+}
+/* if screen width is less than 480px, hide prezzoBtn */
+@media screen and (max-width: 480px) {
+    #prezzoBtn {
+        display: none;
+    }
+}
+
+.tableClass {
+    position: absolute;
+    padding: 50px;
+    margin-top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-family: 'font';
+    background-color: #00a8a8;
+}
+
+.tableBtn {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#incrementBtn {
+    border: 1px solid lime;
+}
+
+#decrementBtn {
+    border: 1px solid red;
+}
+
+#incrementBtn:hover {
+    background-color: lime;
+}
+
+#decrementBtn:hover {
+    background-color: red;
+}

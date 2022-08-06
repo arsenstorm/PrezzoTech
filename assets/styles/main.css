@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'font';
+    src: url('https://prezzo.tech/assets/fonts/font.otf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'font';
+}
+
+body {
+    background-color: #fff;
+}
+
+.navBar {
+    background-color: #9dd2c2;
+    overflow: hidden;
+    width: 550px;
+    z-index: 1;
+    height: 90px;
+    text-align: center;
+}
+
+.PrezzoLogo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerGrid {
+    width: 550px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    /* center container */
+    margin: 0 auto;
+}
+.item {
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    background-color: #9dd2c2;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.itemInfo {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.buttonSwitches {
+    padding: 40px;
+}
+
+.buttonSwitchActive {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #00756c;
+    color: #fff;
+    border: 2px solid #00756c;
+    width: 120px;
+    height: 50px;
+}
+
+.buttonSwitch {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #00756c;
+    width: 120px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.buttonSwitch:hover {
+    background-color: #9dd2c2;
+}
+
+.formClass {
+    padding: 20px;
+    background-color: #fff;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#submitButton {
+    background-color: #fff;
+    color: #00756c;
+    border: 2px solid #00756c;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitButton:hover {
+    background-color: #00756c;
+    color: #fff;
+    border: 2px solid #00756c;
+}
+
+input {
+    margin: 20px 0;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type=password] {
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#logoutBtn {
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+#logoutBtn:hover {
+    background-color: #fdd;
+    color: black;
+}
+
+.buttonGrid {
+    background-color: #9dd2c2;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.buttonGrid:hover {
+    background-color: #00756c;
+    color: #fff;
+}
+
+#accountBtn {
+    background-color: #2196f3;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+#accountBtn:hover {
+    background-color: #dff;
+    color: #000;
+}
+
+#oneCallBtn {
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    /* center image */
+    margin: -1px -10px;
+}
+
+.item__circle {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}

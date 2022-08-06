@@ -1,0 +1,143 @@
+h2 {
+    margin: 10px
+}
+
+button {
+    margin-top: 10px;
+}
+
+.navBar {
+    margin-bottom: 30px;
+}
+
+.container {
+    transition: all 0.3s ease-in-out;
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttonSwitchActive {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #00756c;
+    color: #fff;
+    border: 2px solid #00756c;
+    width: 200px;
+    height: 50px;    
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.buttonSwitch {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #00756c;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.buttonSwitch:hover {
+    background-color: #9dd2c2;
+}
+
+.buttonSwitchDisabled {
+    cursor: not-allowed;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #00756c;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+#backToHomeBtn {
+    margin-top: 50px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.3s;
+}
+
+#backToHomeBtn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid #00756c;
+    border-right: none;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+input[type=text] {
+    height: 50px!important;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputDisabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+.messageBox {
+    position: fixed;
+    left: auto;
+    bottom: -10px;
+    width: 300px;
+    padding: 23px;
+    opacity: 0;
+    text-align: center;
+    animation: moveUp 5s;
+    margin: 0 auto;
+}
+
+.animateNow {
+    animation: moveUp 5s;
+}
+
+.msgFail {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.msgSuccess {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* create an animation that moves .messageBox up 50px and fades the box to opacity 1 */
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
