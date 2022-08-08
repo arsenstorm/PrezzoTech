@@ -1,4 +1,3 @@
-// create function to reload window when called
 function reload() {
     window.location.reload();
 }
@@ -9,11 +8,6 @@ function reset() {
         window.location.href = "./reset.php";
     }
 }
-// reloadBtn is the button that calls the reload function
-document.getElementById("reloadBtn").addEventListener("click", reload);
-// resetBtn is the button that calls the reset function
-document.getElementById("resetBtn").addEventListener("click", reset);
-
 function updateDatabase(name, amountRequired) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://prezzo.tech/stock/update.php", true);
@@ -59,5 +53,3 @@ function runButtonListeners() {
         });
     });
 }
-
-runButtonListeners();

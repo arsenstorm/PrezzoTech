@@ -36,7 +36,8 @@ body {
 }
 
 .containerGrid {
-    width: 550px;
+    width: 100%;
+    max-width: 400px;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -45,13 +46,14 @@ body {
     margin: 0 auto;
 }
 .item {
-    width: 120px;
-    height: 120px;
-    margin: 30px;
+    width: 80px;
+    height: 80px;
+    margin: 15px;
     background-color: #9dd2c2;
     border-radius: 15px;
     overflow: hidden;
     transition: 0.2s;
+    text-align: center;
 }
 
 .itemInfo {
@@ -205,20 +207,22 @@ input[type=password] {
 }
 
 img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     padding: 0;
-    /* center image */
-    margin: -1px -10px;
+    transform: translate(-20px, -17.5px);
 }
 
-.item__circle {
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
+@media screen and (min-width: 600px) {
+    .item__circle {
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
 }
+
 
 .item:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.8;
 }

@@ -14,6 +14,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prezzo Tech</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -35,7 +36,7 @@ session_start();
                     <button class="buttonGrid" onclick="npsSubmit()">NPS</button>
                 </div>
                 <div class="item">
-                    
+                    <button class="buttonGrid" onclick="barSubmit()">Bar</button>
                 </div>
                 <div class="item">                    
                 
@@ -50,10 +51,14 @@ session_start();
                     <button id="oneCallBtn" onclick="onecall()"><img src="./assets/images/onecall.png" alt="OneCall"></button>
                 </div>
                 <div class="item">
-                    <button id="accountBtn" onclick="account()">Account</button>
+                    <button id="accountBtn" onclick="account()">
+                        <i class="fas fa-user"></i>
+                    </button>
                 </div>
                 <div class="item">
-                    <button id="logoutBtn" onclick="logoutSubmit()">Logout</button>
+                    <button id="logoutBtn" onclick="logoutSubmit()">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
                 </div>
             </div>
             <script>
@@ -79,6 +84,10 @@ session_start();
                 // if oneCallBtn is clicked then redirect to https://onecall.prezzo.co.uk/
                 function onecall() {
                     window.location.href = "https://onecall.prezzo.co.uk/";
+                }
+                // if barBtn is clicked then redirect to https://prezzo.tech/bar
+                function barSubmit() {
+                    window.location.href = "https://prezzo.tech/bar";
                 }
             </script>
             
